@@ -14,6 +14,8 @@
     "mongodb": "^3.6.2"
   },  
   "scripts": {
-    "start": "babel-node ./Index.js"
+    "start": "NODE_ENV=production babel-node ./Index.js",
+    "dev": "babel-node ./Index.js",
+    "debug" : "babel-node inspect ./Index.js"
   }
 }
