@@ -8,10 +8,9 @@ const mongo1 = new Mongo();
 const init = async () => {
   
   const obj1 = mongo.setup("mongodb://127.0.0.1:27017", "testing", "room");
-  const obj2 = mongo.setup("mongodb://127.0.0.1:27017", "testing", "user");
+  const obj2 = mongo1.setup("mongodb://127.0.0.1:27017", "testing", "user");
 
-  let res = await getCount(obj1);
-  let res2 = await getCount(obj2);
+  let [res, res2] = await Promise.all([find(obj1), find(obj2)]);  
   
   console.log(gzip(res.toString()));  
   console.log(gzip(res2.toString()));  
