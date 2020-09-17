@@ -25,9 +25,9 @@ app.get('/', async (req,res)=>{
   let zip2 = gzip(result2);
 
   //let unzip1 = unzip(zip1);
-  let unzip2 = unzip(zip2, 100, 2);
+  //let unzip2 = unzip(zip2, 100, 2);
 
-  res.send(unzip2).status(200);
+  res.send(zip2).status(200);
 
 });
 
