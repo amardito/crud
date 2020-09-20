@@ -19,7 +19,9 @@ app.get('/', async (req,res)=>{
 
   res.setHeader('content-type', 'application/json');
 
-  let [result, result2] = await Promise.all([find(obj1), find(obj2)]);  
+  let field = {email:1};  
+
+  let [result, result2] = await Promise.all([find(obj1), findOne(obj2, {},field)]);  
 
   //let zip1 = gzip(result);
   let zip2 = gzip(result2);
@@ -27,7 +29,7 @@ app.get('/', async (req,res)=>{
   //let unzip1 = unzip(zip1);
   //let unzip2 = unzip(zip2, 100, 2);
 
-  res.send(zip2).status(200);
+  res.send(result2).status(200);
 
 });
 
