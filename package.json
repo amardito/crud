@@ -1,17 +1,10 @@
 {
   "name": "mongooo",
-  "version": "1.0.0",
-  "main": "Index.js",
+  "version": "1.0.0",  
   "repository": "https://github.com/Manusiabodoh4/crud.git",
   "author": "Reza Andriansyah <technoboth@gmail.com>",
-  "license": "MIT",
-  "type": "module",
+  "license": "MIT",  
   "dependencies": {
     "mongodb": "^3.6.2"
-  },
-  "scripts": {
-    "start": "NODE_ENV=production babel-node ./Index.js",
-    "dev": "babel-node ./Index.js",
-    "debug": "babel-node inspect ./Index.js"
-  }
+  }  
 }
