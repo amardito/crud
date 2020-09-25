@@ -1,10 +1,11 @@
 {
   "name": "mongooo",
-  "version": "1.0.0",  
+  "version": "1.0.0",
+  "main": "index.js",
   "repository": "https://github.com/Manusiabodoh4/crud.git",
   "author": "Reza Andriansyah <technoboth@gmail.com>",
-  "license": "MIT",  
+  "license": "MIT",
   "dependencies": {
     "mongodb": "^3.6.2"
-  }  
+  }
 }
